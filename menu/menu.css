@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.menu_items {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background: #eee;
+  border: solid 1px #ccc;
+}
