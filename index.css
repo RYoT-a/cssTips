@@ -23,3 +23,24 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
+
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.index_title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .index_title{
+    font-size: 30px;
+  }
+}
