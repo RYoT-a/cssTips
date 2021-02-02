@@ -42,6 +42,8 @@ img {
 /* --------------------------------- */
 /* utility */
 
+
+
 /* ---------- 本体 ---------- */
 .index {
   position: relative;
@@ -147,7 +149,6 @@ img {
 
 .index_menu_box_list {
   width: 100%;
-  padding-top: 10px;
 }
 
 .index_menu_box_list_item {
@@ -167,10 +168,10 @@ img {
   font-size: 20px;
   font-weight: bold;
 }
-/* ---------- 本体 ---------- */
 
 @media screen and (max-width: 600px) {
   .index_title{
     font-size: 30px;
   }
 }
+/* ---------- 本体 ---------- */
