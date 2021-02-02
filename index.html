@@ -30,12 +30,21 @@
 <body>
   <div class="index">
     <h1 class="index_title">ほぼ自分用のicon一覧です。<br>もしご利用になりたければご自由にどうぞ</h1>
-    <!-- <button class="menu_items_btn1" id="#js_btn" aria-expanded="false">
-      <span class="menu_items_btn1_bar"></span>
-    </button> -->
+    <!-- メニューバー -->
+    <div class="index_menu" id="js_menu" aria-hidden="true">
+      <button class="index_menu_btn" id="js_btn" aria-expanded="false">
+        <span class="index_menu_btn_bar"></span>
+      </button>
+      <div class="index_menu_box">
+        <ul class="index_menu_box_list">
+          <li class="index_menu_box_list_item">
+            <a class="index_menu_box_list_item_link u-focus" href="./menu/menu.html">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <ul>
-    <li><a href="./menu/menu.html">menu</a></li>
-  </ul>
+  <!-- メニューバー -->
+  <script src="index.js"></script>
 </body>
 </html>

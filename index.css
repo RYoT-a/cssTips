@@ -1,3 +1,4 @@
+/* ---------- リセットcss ---------- */
 html{color:#000;background:#eee}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
 *{
@@ -10,12 +11,10 @@ html{color:#000;background:#eee}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 a{
   text-decoration: none;
   color: inherit;
-  transition: .3s;
 }
 
 a:hover{
   opacity: .7;
-  transition: .3s;
 }
 
 img {
@@ -23,9 +22,29 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+/* ---------- リセットcss ---------- */
 
+/* module */
+/* --------------------------------- */
+/* --------------------------------- */
+/* module */
 
+/* utility */
+/* --------------------------------- */
+.u-focus {
+  outline: none !important;
+}
+
+.u-focus:focus {
+  outline-offset: 2px;
+  outline: solid 3px #109AD8 !important;
+}
+/* --------------------------------- */
+/* utility */
+
+/* ---------- 本体 ---------- */
 .index {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +57,117 @@ img {
   font-size: 50px;
   font-weight: bold;
 }
+
+.index_menu {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  transition: .5s;
+}
+
+.index_menu[aria-hidden="false"] {
+  left: calc(100vw - 300px);
+}
+
+/* icon */
+.index_menu_btn {
+  position: absolute;
+  top: 20px;
+  left: -90px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: initial;
+  border: none;
+  cursor: pointer;
+}
+
+.index_menu_btn:focus {
+  outline: none;
+}
+
+.index_menu_btn:focus-visible {
+  outline-offset: 2px;
+  outline: solid 3px #109AD8;
+}
+
+.index_menu_btn_bar {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 5px;
+  background: #666;
+  transition: .3s;
+}
+
+.index_menu_btn_bar::before {
+  position: absolute;
+  top: -12px;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #666;
+  transition: .3s;
+  content: "";
+}
+
+.index_menu_btn_bar::after {
+  position: absolute;
+  top: 12px;
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: #666;
+  transition: .3s;
+  content: "";
+}
+
+.index_menu_btn[aria-expanded="true"] .index_menu_btn_bar {
+  background: none;
+}
+
+.index_menu_btn[aria-expanded="true"] .index_menu_btn_bar::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.index_menu_btn[aria-expanded="true"] .index_menu_btn_bar::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* icon */
+
+.index_menu_box {
+  display: block;
+  width: 300px;
+  height: 100vh;
+  background: #999;
+}
+
+.index_menu_box_list {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.index_menu_box_list_item {
+  height: 69px;
+  text-align: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.index_menu_box_list_item:hover {
+  background: #aaa;
+}
+
+.index_menu_box_list_item_link {
+  display: block;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* ---------- 本体 ---------- */
 
 @media screen and (max-width: 600px) {
   .index_title{
