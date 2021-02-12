@@ -312,3 +312,27 @@
   100%{ transform:rotate(360deg); }
 }
 /* icon5 */
+
+/* icon6 */
+.menu_items_loadingIcon2 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  box-shadow:
+  0 -25px 0 #ddd,
+  18px -18px 0 #ccc,
+  25px 0 0 #aaa,
+  18px 18px 0 #888,
+  0 25px 0 #666,
+  -18px 18px 0 #444,
+  -25px 0 0 #222,
+  -18px -18px 0 #000;
+
+  animation:rotation2 1.2s steps(8) infinite;
+}
+
+@keyframes rotation2{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+/* icon6 */
