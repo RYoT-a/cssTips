@@ -336,3 +336,23 @@
   100%{ transform:rotate(360deg); }
 }
 /* icon6 */
+
+/* icon7 */
+.menu_items_loadingIcon3 {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-top: solid #999 8px;
+  border-right: solid #ccc 8px;
+  border-bottom: solid #ccc 8px;
+  border-left: solid #ccc 8px;
+  border-radius: 50%;
+
+  animation:rotation3 .8s linear infinite;
+}
+
+@keyframes rotation3{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+/* icon7 */
