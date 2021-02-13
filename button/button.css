@@ -36,3 +36,49 @@
   -2px -2px 10px #ffffff;
 }
 /* button_1 */
+
+/* button_2 */
+.button_items_btn2 {
+  position: relative;
+  width: 110px;
+  height: 45px;
+  border: solid 2px #999;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.button_items_btn2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 45px;
+  background: #999;
+  transition: .3s;
+  z-index: -1;
+  content: "";
+}
+
+.button_items_btn2:hover {
+  color: #eee;
+}
+
+.button_items_btn2:hover:after {
+  width: 110px;
+}
+
+.button_items_btn2:focus {
+  color: #eee;
+  outline-offset: 2px;
+  outline: solid 3px #666;
+  transition: none;
+}
+
+.button_items_btn2:focus::after {
+  width: 110px;
+}
+/* button_2 */
